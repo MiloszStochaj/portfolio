@@ -1,11 +1,14 @@
 // Home.js
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <div>
-      <h1>Welcome to My Portfolio!</h1>
-      <p>This is the homepage of my portfolio. Here, you will find information about me and my projects.</p>
+      <h1>{t('home.title')}</h1>
+      <p>{t('home.description')}</p>
     </div>
   );
 }

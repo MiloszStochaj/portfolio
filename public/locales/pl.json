@@ -1,0 +1,24 @@
+{
+  "header": {
+    "logo": "Logo",
+    "about": "O mnie",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Witaj na moim portfolio!",
+    "description": "To jest strona główna mojego portfolio. Tutaj znajdziesz informacje o mnie i moich projektach."
+  },
+  "projects": {
+    "title": "Moje projekty",
+    "description": "Oto niektóre z projektów, nad którymi pracowałem."
+  },
+  "contact": {
+    "title": "Kontakt ze mną",
+    "description": "Jeśli chcesz się ze mną skontaktować, proszę napisz do mnie na email."
+  },
+  "about": {
+    "title": "O mnie",
+    "description": "Jestem pasjonatem web developmentu z doświadczeniem w tworzeniu nowoczesnych aplikacji webowych. Moje umiejętności to HTML, CSS, JavaScript i React."
+  }
+}

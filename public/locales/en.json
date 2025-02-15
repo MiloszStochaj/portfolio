@@ -1,0 +1,24 @@
+{
+  "header": {
+    "logo": "Logo",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to My Portfolio!",
+    "description": "This is the homepage of my portfolio. Here, you will find information about me and my projects."
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "Here are some of the projects I've worked on."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "If you would like to get in touch, please reach out to me via email."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a passionate web developer with experience in building modern web applications. My skills include HTML, CSS, JavaScript, and React."
+  }
+}
