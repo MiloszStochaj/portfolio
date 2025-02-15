@@ -1,0 +1,11 @@
+// src/scss/main.scss
+
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/footer';

@@ -1,0 +1,17 @@
+// src/scss/layout/_footer.scss
+@import '../abstracts/variables';
+@import '../abstracts//mixins';
+
+
+footer {
+    background-color: $header-footer-background;
+    color: $text-color;
+    padding: $padding-side-small $padding-side;
+    text-align: center;
+  
+    p {
+      font-size: $font-size-small;
+    }
+  }
+  
+  

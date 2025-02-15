@@ -1,0 +1,49 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family, sans-serif;
+    font-size: $font-size-default;
+    line-height: $line-height-default;
+    color: $text-color;
+    background-color: $background-color;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: $text-color;
+  }
+  
+  a {
+    color: $link-color;
+    text-decoration: none;
+  
+    &:hover {
+      color: lighten($link-color, 10%);
+    }
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+html {
+    font-size: 62.5%;
+}
+
+
+.content {
+    padding: $padding-side;
+
+    @include respond(phone){
+        padding: $padding-side-small;
+    }
+}

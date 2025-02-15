@@ -1,0 +1,31 @@
+// src/scss/layout/_header.scss
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+header {
+    background-color: $header-footer-background;
+    color: $text-color;
+    padding: $padding-side-small $padding-side;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: $text-color;
+    }
+  
+    nav {
+      a {
+        color: $text-color;
+        margin-left: 1.5rem;
+  
+        &:hover {
+          color: lighten($link-color, 10%);
+        }
+      }
+    }
+  }
+  
+  
