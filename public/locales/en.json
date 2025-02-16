@@ -1,13 +1,17 @@
 {
   "header": {
-    "logo": "Logo",
+    "logo": "@miloszstochaj",
     "about": "About",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": "Menu",
+    "home": "Home"
   },
   "home": {
-    "title": "Welcome to My Portfolio!",
-    "description": "This is the homepage of my portfolio. Here, you will find information about me and my projects."
+    "name": "Milosz Stochaj",
+    "title": "Frontend Developer",
+    "description": "This is the homepage of my portfolio. Here, you will find information about me and my projects.",
+    "portfolioButton": "My projects"
   },
   "projects": {
     "title": "My Projects",

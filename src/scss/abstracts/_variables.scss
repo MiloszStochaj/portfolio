@@ -1,8 +1,8 @@
 // src/scss/abstracts/_variables.scss
 
 // Colors
-$primary-color: #4a90e2;
-$secondary-color: #212121;
+$primary-color: #00315c;
+$secondary-color: #fa4854;
 $background-color: #121212;
 $text-color: #e0e0e0;
 $link-color: $primary-color;
@@ -20,6 +20,19 @@ $font-size-small: 1.2rem;
 // Padding
 $padding-side: 4.8rem;
 $padding-side-small: 2.4rem;
+$header-padding: 1.5rem;
+$header-padding-big: 4rem;
+
+
+// Margin
+$header-margin: $header-padding;
+$header-margin-big: $header-padding-big;
+
+$icon-margin: 1rem;
+
+
+// Radius
+$component-radius: 1.5rem;
 
 // Line height
 

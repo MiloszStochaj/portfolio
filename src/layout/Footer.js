@@ -5,7 +5,7 @@ import '../scss/layout/_footer.scss';
 const Footer = () => {
   return (
     <footer>
-      <p>© 2025 Your Portfolio. All rights reserved.</p>
+      <p>© 2025 Miłosz Stochaj Portfolio. All rights reserved.</p>
     </footer>
   );
 };
