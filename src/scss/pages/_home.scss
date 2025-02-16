@@ -1,57 +1,316 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 .section {
-    &__hero {
+
+  &__hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $background-color;
+    color: $text-color;
+    max-width: 1260px;
+    margin: 0 auto;
+    height: 70vh;
+    z-index: 2;
+
+    padding: $padding-section $padding-side;
+
+    @include respond(phone) {
+      padding: $padding-section-mobile $padding-side-small;
+      height: 100%;
+    }
+
+    &-container {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
-      background-color: $background-color;
+      gap: 30px;
+      z-index: 2;
+
+      @include respond(phone) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    &-image {
+      flex-shrink: 0;
+      width: 150px;
+      height: 150px;
+      border-radius: $component-radius;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-content {
+      max-width: 700px;
+    }
+
+    &-name {
+      padding-bottom: $header-padding;
+    }
+
+    &-title {
+      padding-bottom: $header-padding;
+    }
+
+    &-description {
       color: $text-color;
-      height: 70vh;
+      margin-bottom: $header-margin-big;
+    }
+  }
 
-      &-container {
-        display: flex;
-        align-items: center;
-        gap: 30px;
+  &__techstack {
+    position: relative;
+    padding: $padding-side;
+    text-align: center;
+    max-width: 1260px;
+    margin: $margin-section auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
 
-        @include respond(phone) {
-            flex-direction: column;
-            text-align: center;
-        }
+    @include respond(phone) {
+      padding: $padding-side-small;
+      margin: $margin-section-mobile auto;
+      flex-direction: column;
+    }
+
+    &-header {
+      display: flex;
+      flex-direction: column;
+      margin-right: $header-margin-huge;
+
+      @include respond(phone) {
+        margin-right: 0;
       }
-    
-      &-image {
-        flex-shrink: 0;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-    
-      &-content {
-        max-width: 500px;
-      }
-    
-      &-name {
-        padding-bottom: $header-padding;
-        letter-spacing: 1.5px;
-      }
-  
-      &-title {
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        padding-bottom: $header-padding;
-      }
-    
-      &-description {
-        color: $text-color;
+    }
+
+    &-title {
+      margin-bottom: $header-margin;
+    }
+
+    &-desc {
+      margin-bottom: $header-margin;
+
+      @include respond(phone) {
         margin-bottom: $header-margin-big;
       }
     }
+
+    &-grid {
+      .tech-card {
+        padding: $padding-side-small;
+        border-radius: $component-radius;
+        transition: transform 0.3s ease;
+        text-align: center;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        p {
+          margin-top: 10px;
+          font-size: 1.1em;
+          color: $text-color;
+        }
+
+        .tech-icon {
+          margin-bottom: 10px;
+          color: $text-color;
+          transition: color 0.3s;
+
+          &.angular {
+            color: #dd0031;
+          }
+
+          &.react {
+            color: #61dafb;
+          }
+
+          &.graphql {
+            color: #e535ab;
+          }
+
+          &.restapi {
+            color: #f06529;
+          }
+
+          &.scss {
+            color: #cd6799;
+          }
+
+          &.html {
+            color: #e34f26;
+          }
+
+          &.figma {
+            color: #0acf83;
+          }
+
+          &.wordpress {
+            color: #21759b;
+          }
+
+          &.php {
+            color: #777bb3;
+          }
+          &.github {
+            color: #565656;
+          }
+
+          &.git {
+            color: #F05032;
+          }
+
+          &.javascript {
+            color: #F7DF1E;
+          }
+        }
+      }
+    }
   }
-  
+
+  &__projects {
+    padding: $padding-section $padding-side;
+    text-align: center;
+    max-width: 1260px;
+    margin: 0 auto;
+    z-index: 2;
+
+    @include respond(phone) {
+      padding: $padding-section-mobile $padding-side-small;
+    }
+
+    &-title {
+      margin-bottom: $header-margin;
+    }
+
+    &-desc {
+      margin-bottom: $header-margin;
+    }
+
+    &-header {
+      max-width: 700px;
+      margin: 0 auto;
+      margin-bottom: $header-margin-big;
+    }
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 20px;
+
+      @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-card {
+        background-color: $background-color;
+        padding: $padding-side-small;
+        border-radius: $component-radius;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 33%;
+
+        @include respond(phone) {
+          width: 100%;
+        }
+
+        .project-image {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          object-position: left;
+          border-radius: $component-radius;
+          margin-bottom: $header-margin;
+        }
+
+        .project-title {
+          margin-bottom: $header-margin;
+          color: $text-color;
+        }
+
+        .btn {
+          margin-top: $header-margin;
+        }
+      }
+    }
+  }
+}
+
+
+
+// Slider
+
+.slick-slider {
+  max-width: 600px;
+}
+
+.slick-slide {
+  text-align: center;
+
+  .tech-icon {
+    color: $text-color;
+    transition: color 0.3s;
+  }
+
+  p {
+    color: $text-color;
+  }
+}
+
+
+.slick-center {
+  .tech-icon {
+    color: initial;
+    transform: scale(1.5);
+    transition: transform 1s, color 0.3s;
+  }
+}
+
+.slider-controls {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(-50%, -50%);
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.slider-prev, .slider-next {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.slider-prev svg, .slider-next svg {
+  color: $text-color 
+}
+
+.icon-background {
+  position: absolute;
+  top: 15rem;
+  right: 10rem;
+  width: 60rem;
+  height: 60rem;
+  background: url('../../assets/background-icon-1.svg') no-repeat center center;
+  background-size: cover; 
+  z-index: 1;
+  transform: rotate(0deg);
+  opacity: .1;
+}

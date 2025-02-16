@@ -18,15 +18,23 @@ $font-size-medium: 1.8rem;
 $font-size-small: 1.2rem;
 
 // Padding
+$padding-section: 8rem;
+$padding-section-mobile: 3rem;
 $padding-side: 4.8rem;
 $padding-side-small: 2.4rem;
 $header-padding: 1.5rem;
+$header-padding-medium: 2rem;
 $header-padding-big: 4rem;
+$header-padding-huge: 6rem;
 
 
 // Margin
+$margin-section: $padding-section;
+$margin-section-mobile: $padding-section-mobile;
 $header-margin: $header-padding;
+$header-margin-medium: $header-padding-medium;
 $header-margin-big: $header-padding-big;
+$header-margin-huge: $header-padding-huge;
 
 $icon-margin: 1rem;
 

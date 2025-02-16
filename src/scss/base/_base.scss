@@ -38,12 +38,3 @@ body {
 html {
     font-size: 62.5%;
 }
-
-
-.content {
-    padding: $padding-side;
-
-    @include respond(phone){
-        padding: $padding-side-small;
-    }
-}

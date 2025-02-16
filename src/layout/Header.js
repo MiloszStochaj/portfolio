@@ -64,7 +64,7 @@ const Header = () => {
         </button>
 
         <ul className="header__mobile-nav">
-          <h3 className="header__nav-header gradient-text">{t('header.menu')}</h3>
+          <h3 className="header__nav-header">{t('header.menu')}</h3>
           <li className="header__nav-item">
               <Link to="/" onClick={closeMenu}>{t('header.home')}</Link>
           </li>

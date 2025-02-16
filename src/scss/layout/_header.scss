@@ -54,7 +54,7 @@
     }
 
     &-item {
-      margin-right: $icon-margin;
+      margin-right: $padding-side-small;
 
       @include respond(tablet) {
         padding-bottom: $header-padding;

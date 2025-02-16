@@ -9,9 +9,18 @@
   },
   "home": {
     "name": "Milosz Stochaj",
-    "title": "Frontend Developer",
-    "description": "This is the homepage of my portfolio. Here, you will find information about me and my projects.",
-    "portfolioButton": "My projects"
+    "title": "#Frontend Developer",
+    "description": "Welcome to my portfolio! Here, you will find information about my skills, the technologies I use, and the projects I've worked on. Feel free to explore my work.",
+    "portfolioButton": "My projects",
+    "techStackTitle": "Technologies I Use",
+    "projectsHeader": "Projects I Have Completed",
+    "projectsDescription": "Feel free to explore some of the projects I have completed or contributed to as a Frontend Developer",
+    "projectsTitle": "#Projects",
+    "viewMore": "View More",
+    "viewProject": "View Project",
+    "techStackHeader": "#Technologies",
+    "techStackDescription": "When building websites and applications, I use technologies such as React, Angular, WordPress, JavaScript, SCSS, PHP, REST API, GraphQL."
+
   },
   "projects": {
     "title": "My Projects",
